@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <div id="header">
+    <div class="container">
+     <nav>
+        <img src="image/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+     </nav> 
+       <div class="header-text">
+         <p>UI/UX Devloper</p>
+         <h1>Hi, I'm <span> Anurag Kumar</span><br>Computer Science Engineer</h1>
+     </div> 
+     </div>
+     </div>
+      <!-----------about------------>
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/image.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To be associated with a dynamic and
+                        progressive organization that will allow me to
+                        utilize my abilities and qualifications in the
+                        field to add value to the organization while
+                        providing me with opportunities for growth.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certification')">Certification</p>
+
+                        </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                                <li><span>Programming</span><br> C (basic) , JAVA</li>
+                                <li><span>Server-side Tech</span><br> JSP, Servlets , JDBC</li>
+                                <li><span>Database</span><br> Oracle</li>
+                                <li><span>IDE/TOOL</span><br> Eclipse ,Visual studioCode</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span></span><br> FRESHER </li>
+                              </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                             <ul>
+                                <li><span>2014 - 2015</span><br> HIGHER SECONDARY</li>
+                                <li><span>2015 - 2017</span><br> SENIOR SECONDARY</li>
+                                <li><span>2017 - 2021</span><br> B.TECH</li>
+                             </ul>
+                         </div>
+                          
+                        <div class="tab-contents" id="certification">
+                            <ul>
+                                <li><span>WEB Development</span><br> @ INTERNSHALA</li>
+                                <li><span>JAVA Full Stack</span><br> @ Satya Technologies</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div> 
+       </div>
+       <!-------------services------------->
+
+       <div id="services">
+         <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+
+                    <h2>Web Design</h2>
+                    <p>Every business has its own growth strategy, and it almost always involves software
+                       development (or improvement). This could include SCM, security solutions, or enhanced workflow systems.
+                       Regardless of the specific focus, these initiatives aim to automate business processes or create new sectors for 
+                       potential company growth. However, maintaining a full-fledged IT department with full-stack developers, designers,
+                       and testers solely for this purpose is often unnecessary.</p>
+                       <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop"></i>
+
+                    <h2>UI/UX Design</h2>
+                    <p>If they are two separate roles, why are there job postings for UX / UI designers? Sometimes these are considered two separate 
+                        fields — UX focusing on research and ideation and UI focusing on aesthetics and branding — but, they are both essential in product design.
+                        UX and UI designers work in tandem, and some companies may hire one person to complete both roles. This is dependent on the industry and company
+                        structure, but there may be a good reason for it, as explained below. Additionally, it’s imperative that UX designers understand UI and vice versa.</p>
+                       <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-smile-o"></i>
+                    
+                    <h2>App Design</h2>
+                    <p>Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for 
+                       the Android and iOS operating systems. The software can be preinstalled on the device, downloaded from a mobile app store or accessed through 
+                       a mobile web browser. The programming and markup languages used for this kind of software development include Java, Swift, C# and HTML5.</p>
+                       <a href="#">Learn more</a>
+                </div>
+            </div>
+         </div>   
+    </div>
+
+    <!---------------portfolio--------------->
+
+    <div id="portfolio">
+         <div class="container">
+            <h1 class="sub-title">My work</h1> 
+            <div class="work-list">
+                <div class="work">
+                  <img src="image/1.jpg">
+                  <div class="layer">
+                    <h3>Social Media Aap</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        download it form play store.</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                  </div>  
+                </div>
+                <div class="work">
+                    <img src="image/2.jpg"> 
+                    <div class="layer">
+                        <h3>Online Shoping Aap</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            download it form play store.</p>
+                            <a href="#"><i class="fa fa-external-link"></i></a>
+                      </div>   
+                  </div>
+                  <div class="work">
+                    <img src="image/3.jpg"> 
+                    <div class="layer">
+                        <h3>Music Aap</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            download it form play store.</p>
+                            <a href="#"><i class="fa fa-external-link"></i></a>
+                      </div>   
+                  </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+         </div>
+    </div>
+
+    <!---------------contact------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-send"></i> kumaranurag326@gmail.com</p>
+                    <p>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <a href="https://github.com/AnuragK4u">Visit my GitHub profile</a>
+                      </p>
+                      
+                    <p><i class="fa fa-phone-square"></i> 9608727999</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a>
+                        <a href=""><i class="fa fa-twitter-square"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                    <a href="image/my-cv.pdf" download class="btn btn2">download CV</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+               </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ⓒ Anurag Kumar <i class="fa fa-heart"></i></p>
+        </div>
+    </div>
+
+
+       <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab (tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+       </script>
+
+       <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+       </script>
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxks9wtXIN6Tnpr59Bi1eHIR1AQ6i9-GEOWS4HiIps4QsvBQR4E4k8R4BdeKvx3tawJPA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                 msg.innerHTML = ""   
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
