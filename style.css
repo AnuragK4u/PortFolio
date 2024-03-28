@@ -65,6 +65,9 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.about-col-2 span{
+ color: rgb(174, 43, 43);
+}
 .header-text{
   margin-top: 30%;
   font-size: 30px;
@@ -74,6 +77,11 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 30px;
 }
+.header-text p span{
+    color: red;
+}
+
+
 .header-text h1 span{
     color: #ff004f;
 }
@@ -327,8 +335,19 @@ nav ul li a:hover::after{
     }
 
     .btn.btn2{
-        display: inline-block;
-        background: #ff004f;
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.4s;
+  display: inline-block; /* Added */
+    }
+
+    .btn:hover{
+        transform: scale(1.2);
     }
 
     .contact-right form{
@@ -336,7 +355,7 @@ nav ul li a:hover::after{
     }
 
     form input, form textarea{
-        width: 100%;
+        width: 90%;
         border: 0;
         outline: none;
         background: #262626;
@@ -375,12 +394,15 @@ nav .fa{
 
 @media only screen and (max-width: 600px){
    #header{
-    background-image: url(image/phone-bg.png);
+    background-image: url(image/PHONE.jpg);
+    height: 620px;
+    width: 100%;
    }
-
+  
    .header-text{
     margin-top: 100%;
     font-size: 16px;
+
    }
 
    .header-text h1{
